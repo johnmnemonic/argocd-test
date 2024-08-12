@@ -15,7 +15,7 @@ spec:
         app: app1-test
     spec:
       containers:
-        - image: nginx:alpine
+        - image: nginx:mainline-alpine
           name: nginx-alpine
           imagePullPolicy: Always
           ports:
