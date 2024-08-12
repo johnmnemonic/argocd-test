@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: app1-test
+  name: app1-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app1-test
+  template:
+    metadata:
+      labels:
+        app: app1-test
+    spec:
+      containers:
+        - image: nginx:alpine
+          name: nginx-alpine
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 80
+  
