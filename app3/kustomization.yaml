@@ -3,3 +3,15 @@ resources:
   - serviceaccount.yaml
   - role.yaml
   - rolebinding.yaml
+
+vars:
+  - name: SERVICE_ACCOUNT_NAME
+    objref:
+      kind: ServiceAccount
+      name: my-service-account
+      apiVersion: v1
+
+configMapGenerator:
+  - name: app-config
+    literals:
+      - SERVICE_ACCOUNT_NAME=my-service-account
