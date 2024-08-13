@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  creationTimestamp: null
+  name: rolebinding-ns-admin
+  namespace: hello
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: role-ns-admin
+subjects:
+- kind: ServiceAccount
+  name: sa-ns-admin
