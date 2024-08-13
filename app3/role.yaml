@@ -4,5 +4,5 @@ metadata:
   name: my-role
 rules:
   - apiGroups: [""]
-    resources: ["*"]
-    verbs: ["*"]
+    resources: ["pods"]
+    verbs: ["get", "list"]
