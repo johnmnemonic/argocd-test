@@ -3,7 +3,6 @@ kind: RoleBinding
 metadata:
   creationTimestamp: null
   name: rolebinding-ns-admin
-  namespace: hello
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
