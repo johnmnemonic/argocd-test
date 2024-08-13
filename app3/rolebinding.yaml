@@ -9,4 +9,4 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: my-service-account
-    namespace: {{ .Release.Namespace }}
+    namespace: yeah-must-be-static
