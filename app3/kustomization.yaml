@@ -8,7 +8,7 @@ vars:
   - name: SERVICE_ACCOUNT_NAME
     objref:
       kind: ServiceAccount
-      name: my-service-account
+      name: xyz-service-account
       apiVersion: v1
 
 configMapGenerator:
