@@ -12,7 +12,7 @@ spec:
       labels:
         app: nginx
     spec:
-      serviceAccountName: my-service-account
+      serviceAccountName: xyz-service-account
       containers:
         - name: nginx
           image: nginx:alpine
