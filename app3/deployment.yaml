@@ -18,3 +18,11 @@ spec:
           image: nginx:alpine
           ports:
             - containerPort: 80
+          volumeMounts:
+            - name: html
+              mountPath: /var/cache/nginx/client_temp
+              readOnly: false
+      volumes:
+        - name: html
+          emptyDir: {}
+      
