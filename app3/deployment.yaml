@@ -23,9 +23,8 @@ spec:
               mountPath: /var/cache/nginx/
               readOnly: false
           securityContext:
-            capabilities:
-              add: ["NET_BIND_SERVICE"]
-              drop: ["ALL"]
+            runAsUser: 501
+
       volumes:
         - name: html
           emptyDir: {}
