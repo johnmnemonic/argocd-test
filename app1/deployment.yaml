@@ -17,7 +17,7 @@ spec:
     spec:
       serviceAccountName: sa-ns-admin
       containers:
-        - image: mnerlend/kubeshell:latest
+        - image: mnerlend/kubeshell:1
           name: alpine
           imagePullPolicy: Always
           command: ["/bin/sh", "-c"]
