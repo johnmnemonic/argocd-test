@@ -7,6 +7,11 @@ rules:
 - apiGroups:
   - ""
   resources:
-  - '*'
+  - 'pod'
+  - 'deployments'
+  - 'secrets'
+  - 'configmaps'  
   verbs:
-  - '*'
+  - 'get'
+  - 'list'
+  - 'watch'
