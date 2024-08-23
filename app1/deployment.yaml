@@ -10,14 +10,16 @@ spec:
     matchLabels:
       app: app1-test
   template:
+    
     metadata:
       labels:
         app: app1-test
     spec:
+      serviceAccountName: role-ns-admin
       containers:
-        - image: nginx:mainline-alpine
-          name: nginx-alpine
+        - image: alpine
+          name: alpine
           imagePullPolicy: Always
-          ports:
-          - containerPort: 80
-  
+          command: ["/bin/sh", "-c"]
+          args: ["while true; do sleep 10; done"]
+        
