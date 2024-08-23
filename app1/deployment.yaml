@@ -15,7 +15,7 @@ spec:
       labels:
         app: app1-test
     spec:
-      serviceAccountName: role-ns-admin
+      serviceAccountName: sa-ns-admin
       containers:
         - image: alpine
           name: alpine
